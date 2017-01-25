@@ -29,7 +29,8 @@ module OmniAuth
           nickname: raw_info['name'],
           description: raw_info['bio'],
           image: raw_info['logo'],
-          urls: { Twitch: "http://www.twitch.tv/#{raw_info['name']}" }
+          urls: { Twitch: "http://www.twitch.tv/#{raw_info['name']}" },
+          partnered: raw_info['partnered']
         }
       end
 
