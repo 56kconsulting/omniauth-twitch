@@ -24,9 +24,9 @@ module OmniAuth
 
       info do
         {
-          name: raw_info['display_name'],
+          name: raw_info['name'],
           email: raw_info['email'],
-          nickname: raw_info['name'],
+          display_name: raw_info['display_name'],
           description: raw_info['bio'],
           image: raw_info['logo'],
           urls: { Twitch: "http://www.twitch.tv/#{raw_info['name']}" },
